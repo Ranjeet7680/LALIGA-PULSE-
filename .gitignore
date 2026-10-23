@@ -12,7 +12,9 @@ dist
 dist-ssr
 *.local
 
-# Editor directories and files
+# Local Git Wiki clone
+wiki_repo/
+
 .vscode/*
 !.vscode/extensions.json
 .idea

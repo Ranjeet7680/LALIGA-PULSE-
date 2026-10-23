@@ -10,10 +10,15 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/LALIGA-Official%20Ecosystem-FF4B44?style=for-the-badge&logo=laliga&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub%20Wiki-40%2B%20Diagrams-00F0FF?style=for-the-badge&logo=gitbook&logoColor=white" />
   <img src="https://img.shields.io/badge/Telemetry-Mediacoach%2025fps-00F0FF?style=for-the-badge" />
   <img src="https://img.shields.io/badge/AI%20Engine-Azure%20Beyond%20Stats-0078D4?style=for-the-badge&logo=microsoftazure" />
   <img src="https://img.shields.io/badge/FinTech-Dubai%20Summit%202026-FFD159?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Compliance-100%25%20Free--to--Play-34D399?style=for-the-badge" />
+</p>
+
+<p align="center">
+  📚 <strong>Explore the Full Technical Architecture Wiki:</strong> <a href="https://github.com/Ranjeet7680/LALIGA-PULSE-/wiki">https://github.com/Ranjeet7680/LALIGA-PULSE-/wiki</a>
 </p>
 
 ---
