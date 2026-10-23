@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>LALIGA PULSE — Executive Pitch Deck</title>
+  <style>
+    
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap');
+  
+  @page {
+    size: A4 portrait;
+    margin: 14mm 12mm 14mm 12mm;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    line-height: 1.55;
+    font-size: 11pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+  
+  .avoid-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 { font-size: 22pt; font-weight: 800; margin-bottom: 8pt; color: #0a0c10; }
+  h2 { font-size: 15pt; font-weight: 700; margin-top: 14pt; margin-bottom: 6pt; color: #ff4b44; border-bottom: 2px solid #fee2e2; padding-bottom: 4pt; }
+  h3 { font-size: 12pt; font-weight: 700; margin-top: 10pt; margin-bottom: 4pt; color: #1e293b; }
+  h4 { font-size: 10.5pt; font-weight: 700; margin-top: 6pt; margin-bottom: 2pt; color: #475569; }
+  
+  p { margin-bottom: 8pt; font-size: 10pt; color: #334155; }
+  
+  .cover-card {
+    background: linear-gradient(135deg, #090c12 0%, #161c28 100%);
+    color: #ffffff;
+    padding: 24pt;
+    border-radius: 12pt;
+    margin-bottom: 16pt;
+    border: 1px solid rgba(255, 75, 68, 0.3);
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 3pt 8pt;
+    border-radius: 9999px;
+    font-size: 8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .badge-red { background: rgba(255, 75, 68, 0.15); color: #ff4b44; border: 1px solid rgba(255, 75, 68, 0.3); }
+  .badge-cyan { background: rgba(0, 240, 255, 0.15); color: #0284c7; border: 1px solid rgba(0, 240, 255, 0.3); }
+  .badge-gold { background: rgba(245, 158, 11, 0.15); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.3); }
+  .badge-green { background: rgba(16, 185, 129, 0.15); color: #059669; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10pt 0 14pt 0;
+    font-size: 9pt;
+  }
+  th {
+    background: #0f172a;
+    color: #ffffff;
+    text-align: left;
+    padding: 6pt 8pt;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 8.5pt;
+    letter-spacing: 0.03em;
+  }
+  td {
+    padding: 6pt 8pt;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+  }
+  tr:nth-child(even) td { background: #f8fafc; }
+
+  .metric-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8pt;
+    margin: 12pt 0;
+  }
+  .metric-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8pt;
+    padding: 10pt;
+    text-align: center;
+  }
+  .metric-label { font-size: 7.5pt; text-transform: uppercase; color: #64748b; font-weight: 700; margin-bottom: 2pt; }
+  .metric-value { font-size: 16pt; font-weight: 800; font-family: 'Space Grotesk', sans-serif; color: #ff4b44; }
+  .metric-sub { font-size: 7.5pt; color: #059669; font-weight: 600; }
+
+  .callout {
+    background: #f0fdf4;
+    border-left: 4px solid #22c55e;
+    padding: 10pt 12pt;
+    margin: 10pt 0;
+    border-radius: 0 8pt 8pt 0;
+    font-size: 9.5pt;
+    color: #14532d;
+  }
+  .callout-alert {
+    background: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 10pt 12pt;
+    margin: 10pt 0;
+    border-radius: 0 8pt 8pt 0;
+    font-size: 9.5pt;
+    color: #7f1d1d;
+  }
+
+  .svg-container {
+    width: 100%;
+    margin: 10pt 0 14pt 0;
+    border-radius: 8pt;
+    overflow: hidden;
+    background: #090c12;
+    padding: 6pt;
+    border: 1px solid #cbd5e1;
+  }
+  .svg-container svg { width: 100%; height: auto; display: block; }
+
+    @page {
+      size: A4 landscape;
+      margin: 12mm 12mm 12mm 12mm;
+    }
+    .slide {
+      height: 480pt;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      page-break-after: always;
+      break-after: page;
+      padding: 16pt;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10pt;
+    }
+    .slide-dark {
+      background: linear-gradient(135deg, #090c12 0%, #161c28 100%);
+      color: #ffffff;
+      border: 1px solid rgba(255, 75, 68, 0.4);
+    }
+    .slide-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8pt;
+      margin-bottom: 12pt;
+    }
+    .slide-dark .slide-header {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .slide-title {
+      font-size: 20pt;
+      font-weight: 800;
+      font-family: 'Space Grotesk', sans-serif;
+      color: #0f172a;
+    }
+    .slide-dark .slide-title { color: #ffffff; }
+    .slide-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 8pt;
+      color: #94a3b8;
+      border-top: 1px solid #e2e8f0;
+      padding-top: 6pt;
+      margin-top: 8pt;
+    }
+    .slide-dark .slide-footer { border-top: 1px solid rgba(255, 255, 255, 0.1); }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: COVER -->
+  <div class="slide slide-dark">
+    <div style="display: flex; justify-content: space-between;">
+      <span class="badge badge-red">BEYOND THE MATCH CHALLENGE</span>
+      <span class="badge badge-gold">DUBAI FINTECH SUMMIT • INNOVATION STAGE</span>
+    </div>
+    <div style="text-align: center; margin: 40pt 0;">
+      <h1 style="color: #ffffff; font-size: 38pt; margin-bottom: 10pt;">LALIGA PULSE<span style="color: #ff4b44;">™</span></h1>
+      <p style="color: #00f0ff; font-size: 15pt; font-weight: 700; margin-bottom: 12pt;">
+        The Synchronous In-Match Fan Arena, Optical Intelligence &amp; Fan Capital Network
+      </p>
+      <p style="color: #94a3b8; font-size: 11pt; max-width: 500pt; margin: 0 auto;">
+        Transforming 90 minutes of passive broadcast viewing into a synchronized, co-operative global stadium powered by Mediacoach 25fps optical tracking and a non-speculative loyalty micro-economy.
+      </p>
+    </div>
+    <div class="slide-footer">
+      <span>Official Challenge Pitch Deck</span>
+      <span>USD 10,000 Finalist Showcase</span>
+      <span>github.com/Ranjeet7680/LALIGA-PULSE-</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 2: THE PROBLEM -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-title">1. The Second-Screen Attention Leak</div>
+      <span class="badge badge-red">THE CHALLENGE</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; flex: 1; align-items: center;">
+      <div>
+        <h3 style="color: #ff4b44; font-size: 15pt; margin-bottom: 8pt;">84% of Gen-Z Fans Multi-Screen During Matches</h3>
+        <p style="font-size: 11pt;">During live 90-minute broadcasts, fan attention fragments across TikTok, WhatsApp, X, and betting apps. LALIGA generates the emotional surge, but third-party platforms harvest the screen time and monetization.</p>
+        <h3 style="color: #0f172a; font-size: 15pt; margin-top: 14pt; margin-bottom: 8pt;">85%+ of Global Fans Never Visit Spain</h3>
+        <p style="font-size: 11pt;">Remote international fans in MENA, LatAm, and Asia feel detached from the physical stadium culture. Existing fantasy games are asynchronous, while sports betting is restrictive, predatory, and inaccessible to youth.</p>
+      </div>
+      <div class="metric-grid" style="grid-template-columns: 1fr 1fr; gap: 12pt;">
+        <div class="metric-card" style="padding: 16pt;"><div class="metric-label">Current App Session</div><div class="metric-value">18m</div><div class="metric-sub">Fragmented attention</div></div>
+        <div class="metric-card" style="padding: 16pt;"><div class="metric-label">International Fans</div><div class="metric-value">85%+</div><div class="metric-sub">Geographically detached</div></div>
+        <div class="metric-card" style="padding: 16pt;"><div class="metric-label">Multi-Screen Rate</div><div class="metric-value">84%</div><div class="metric-sub">Attention leakage</div></div>
+        <div class="metric-card" style="padding: 16pt;"><div class="metric-label">Unmonetized Value</div><div class="metric-value">$1.2B</div><div class="metric-sub">Lost second-screen value</div></div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Problem Identification</span>
+      <span>LALIGA PULSE Pitch Deck</span>
+      <span>Slide 2 of 6</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: THE SOLUTION & 4 LAYERS -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-title">2. The Solution: LALIGA PULSE™</div>
+      <span class="badge badge-cyan">4-LAYER ARCHITECTURE</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 10pt; flex: 1; align-items: stretch;">
+      <div style="background: #fef2f2; border: 1px solid #fecaca; border-radius: 8pt; padding: 12pt;">
+        <span class="badge badge-red" style="margin-bottom: 8pt;">LAYER 1</span>
+        <h4 style="color: #991b1b; font-size: 11pt;">In-Match Tactix</h4>
+        <p style="font-size: 9pt; color: #7f1d1d;">15-second synchronous decision windows triggered by optical tracking with sub-3s settlement.</p>
+        <div style="font-size: 8pt; font-weight: 700; color: #ff4b44; margin-top: 10pt;">KPI: +277% Screen Time</div>
+      </div>
+      <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8pt; padding: 12pt;">
+        <span class="badge badge-cyan" style="margin-bottom: 8pt;">LAYER 2</span>
+        <h4 style="color: #075985; font-size: 11pt;">Structured Community</h4>
+        <p style="font-size: 9pt; color: #0c4a6e;">Global Peña clan wars (Tokyo, Cairo, Dubai, Bogotá) and tiered Proof-of-Fandom reputation.</p>
+        <div style="font-size: 8pt; font-weight: 700; color: #0284c7; margin-top: 10pt;">KPI: 1.6 Viral K-Factor</div>
+      </div>
+      <div style="background: #fffbeb; border: 1px solid #fde68a; border-radius: 8pt; padding: 12pt;">
+        <span class="badge badge-gold" style="margin-bottom: 8pt;">LAYER 3</span>
+        <h4 style="color: #92400e; font-size: 11pt;">Beyond Stats 2.0</h4>
+        <p style="font-size: 9pt; color: #78350f;">Proprietary Momentum Shift Index (MSI™), Pressure Cooker, &amp; Crowd Tactical IQ (CTIQ™).</p>
+        <div style="font-size: 8pt; font-weight: 700; color: #d97706; margin-top: 10pt;">KPI: +145% D30 Retention</div>
+      </div>
+      <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8pt; padding: 12pt;">
+        <span class="badge badge-green" style="margin-bottom: 8pt;">LAYER 4</span>
+        <h4 style="color: #166534; font-size: 11pt;">FinTech Value Loop</h4>
+        <p style="font-size: 9pt; color: #14532d;">Non-speculative $PULSE loyalty tokens redeemable for official kits, OTT passes, &amp; partner perks.</p>
+        <div style="font-size: 8pt; font-weight: 700; color: #059669; margin-top: 10pt;">KPI: 3x DAU/MAU Growth</div>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Solution Breakdown</span>
+      <span>LALIGA PULSE Pitch Deck</span>
+      <span>Slide 3 of 6</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 4: SYSTEM & TELEMETRY -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-title">3. Optical Ingest &amp; Ecosystem Integration</div>
+      <span class="badge badge-cyan">TECHNICAL COHERENCE</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; flex: 1; align-items: center;">
+      <div>
+        <h3 style="color: #0f172a; font-size: 13pt; margin-bottom: 8pt;">Native Integration, Zero Standalone Friction</h3>
+        <ul style="font-size: 10pt; color: #334155; margin-left: 14pt; line-height: 1.7;">
+          <li><strong>Sportian Mediacoach:</strong> TRACAB 25fps optical mesh coordinate ingestion over Kafka.</li>
+          <li><strong>Microsoft Azure:</strong> Databricks and Cognitive Services for Beyond Stats ML inference.</li>
+          <li><strong>LALIGA Official App:</strong> Modular React Native micro-frontend with SSO authentication.</li>
+          <li><strong>LALIGA Fantasy:</strong> Live duel wins award bonus booster cards in fantasy leagues.</li>
+          <li><strong>Mediapro Broadcast:</strong> Real-time crowd consensus graphics keyed into linear TV lower-thirds.</li>
+        </ul>
+      </div>
+      <div style="background: #090c12; border-radius: 8pt; padding: 8pt; border: 1px solid #334155;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradArch" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b11" />
+      <stop offset="100%" stop-color="#0f1523" />
+    </linearGradient>
+
+    <linearGradient id="streamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff4b44" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <filter id="glowG" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .flow-particle {
+        stroke-dasharray: 8 16;
+        animation: flowAnim 2.5s linear infinite;
+      }
+      @keyframes flowAnim {
+        from { stroke-dashoffset: 48; }
+        to { stroke-dashoffset: 0; }
+      }
+      .pulse-node {
+        animation: pulseNode 2.2s ease-in-out infinite alternate;
+      }
+      @keyframes pulseNode {
+        0% { transform: scale(1); filter: drop-shadow(0 0 4px rgba(255, 75, 68, 0.4)); }
+        100% { transform: scale(1.02); filter: drop-shadow(0 0 14px rgba(0, 240, 255, 0.7)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="960" height="480" rx="16" fill="url(#bgGradArch)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+
+  <!-- Diagram Title Header -->
+  <g transform="translate(40, 40)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="800">
+      SYSTEM ARCHITECTURE &amp; DATA PIPELINE
+    </text>
+    <text x="0" y="22" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12">
+      Mediacoach Optical Telemetry Ingestion to Real-Time Synchronized Consumer Touchpoints
+    </text>
+  </g>
+
+  <!-- COLUMN 1: LIVE DATA INGESTION -->
+  <g transform="translate(40, 95)">
+    <!-- Column Container -->
+    <rect width="250" height="345" rx="12" fill="rgba(18, 24, 38, 0.7)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <rect x="0" y="0" width="250" height="36" rx="12" fill="rgba(255, 75, 68, 0.12)" />
+    <text x="16" y="23" fill="#ff4b44" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+      1. OPTICAL &amp; DATA INGESTION
+    </text>
+
+    <!-- Node 1: Mediacoach TRACAB -->
+    <g transform="translate(16, 52)">
+      <rect width="218" height="74" rx="8" fill="#121724" stroke="rgba(255, 75, 68, 0.4)" stroke-width="1" />
+      <circle cx="20" cy="24" r="6" fill="#ff4b44" />
+      <text x="34" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Sportian Mediacoach</text>
+      <text x="16" y="48" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">TRACAB® 25fps Optical Mesh</text>
+      <text x="16" y="62" fill="#00f0ff" font-family="monospace" font-size="9">150,000 spatial points/min</text>
+    </g>
+
+    <!-- Node 2: Azure Beyond Stats -->
+    <g transform="translate(16, 142)">
+      <rect width="218" height="74" rx="8" fill="#121724" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1" />
+      <circle cx="20" cy="24" r="6" fill="#00f0ff" />
+      <text x="34" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">Microsoft Azure ML</text>
+      <text x="16" y="48" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Beyond Stats Predictive Models</text>
+      <text x="16" y="62" fill="#ffd159" font-family="monospace" font-size="9">xG, Sprints, Passing Lanes</text>
+    </g>
+
+    <!-- Node 3: Official Match Feed -->
+    <g transform="translate(16, 232)">
+      <rect width="218" height="74" rx="8" fill="#121724" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1" />
+      <circle cx="20" cy="24" r="6" fill="#94a3b8" />
+      <text x="34" y="28" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">LALIGA Match Events</text>
+      <text x="16" y="48" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">Official Stats Perform API</text>
+      <text x="16" y="62" fill="#94a3b8" font-family="monospace" font-size="9">Cards, Subs, VAR Timestamps</text>
+    </g>
+  </g>
+
+  <!-- FLOW PATHS 1 TO 2 -->
+  <g stroke="url(#streamGrad1)" stroke-width="2.5" fill="none">
+    <path class="flow-particle" d="M 290 185 L 360 265" />
+    <path class="flow-particle" d="M 290 275 L 360 265" />
+    <path class="flow-particle" d="M 290 365 L 360 265" />
+  </g>
+
+  <!-- COLUMN 2: LALIGA PULSE CORE ENGINE -->
+  <g transform="translate(360, 95)">
+    <!-- Column Container -->
+    <rect width="240" height="345" rx="12" fill="rgba(20, 27, 44, 0.85)" stroke="rgba(0, 240, 255, 0.35)" stroke-width="1.5" />
+    <rect x="0" y="0" width="240" height="36" rx="12" fill="rgba(0, 240, 255, 0.15)" />
+    <text x="16" y="23" fill="#00f0ff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+      2. LALIGA PULSE CORE
+    </text>
+
+    <!-- Core Engine Inner Components -->
+    <g transform="translate(14, 52)">
+      <!-- Real-Time Event Broker -->
+      <rect width="212" height="58" rx="8" fill="#0d121c" stroke="rgba(255, 255, 255, 0.15)" />
+      <text x="14" y="26" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Real-Time Event Broker</text>
+      <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Apache Kafka • &lt;200ms latency</text>
+
+      <!-- Game State Machine -->
+      <g transform="translate(0, 68)">
+        <rect width="212" height="58" rx="8" fill="#0d121c" stroke="rgba(255, 75, 68, 0.4)" />
+        <text x="14" y="26" fill="#ff736d" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Tactical State Machine</text>
+        <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Dynamic 15s Prompt Generator</text>
+      </g>
+
+      <!-- Adaptive Latency Buffer -->
+      <g transform="translate(0, 136)">
+        <rect width="212" height="58" rx="8" fill="#0d121c" stroke="rgba(0, 240, 255, 0.4)" />
+        <text x="14" y="26" fill="#70f8ff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Adaptive Latency Buffer</text>
+        <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">HLS Timed ID3 / Audio Sync</text>
+      </g>
+
+      <!-- Pulse Loyalty Settlement -->
+      <g transform="translate(0, 204)">
+        <rect width="212" height="58" rx="8" fill="#0d121c" stroke="rgba(255, 209, 89, 0.4)" />
+        <text x="14" y="26" fill="#ffd159" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">FinTech Loyalty Ledger</text>
+        <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Instant $PULSE Credit Minting</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- FLOW PATHS 2 TO 3 -->
+  <g stroke="url(#streamGrad1)" stroke-width="2.5" fill="none">
+    <path class="flow-particle" d="M 600 265 L 670 145" />
+    <path class="flow-particle" d="M 600 265 L 670 225" />
+    <path class="flow-particle" d="M 600 265 L 670 305" />
+    <path class="flow-particle" d="M 600 265 L 670 385" />
+  </g>
+
+  <!-- COLUMN 3: TOUCHPOINTS & ECOSYSTEM -->
+  <g transform="translate(670, 95)">
+    <!-- Column Container -->
+    <rect width="250" height="345" rx="12" fill="rgba(18, 24, 38, 0.7)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <rect x="0" y="0" width="250" height="36" rx="12" fill="rgba(255, 209, 89, 0.12)" />
+    <text x="16" y="23" fill="#ffd159" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+      3. CONNECTED ECOSYSTEM
+    </text>
+
+    <!-- Endpoint 1: LALIGA Official App & Fantasy -->
+    <g transform="translate(14, 46)">
+      <rect width="222" height="62" rx="8" fill="#121724" stroke="rgba(255, 75, 68, 0.3)" />
+      <text x="14" y="25" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Official App &amp; Fantasy SDK</text>
+      <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Modular Micro-Frontend • SSO</text>
+    </g>
+
+    <!-- Endpoint 2: LALIGA+ OTT -->
+    <g transform="translate(14, 116)">
+      <rect width="222" height="62" rx="8" fill="#121724" stroke="rgba(0, 240, 255, 0.3)" />
+      <text x="14" y="25" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">LALIGA+ (OTT Interactive)</text>
+      <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Synced Video Overlay Graphics</text>
+    </g>
+
+    <!-- Endpoint 3: Mediapro Broadcast Keyer -->
+    <g transform="translate(14, 186)">
+      <rect width="222" height="62" rx="8" fill="#121724" stroke="rgba(255, 255, 255, 0.15)" />
+      <text x="14" y="25" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Mediapro TV Lower-Third</text>
+      <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Live Global Crowd Consensus Bug</text>
+    </g>
+
+    <!-- Endpoint 4: In-Stadium Geo-Pulse -->
+    <g transform="translate(14, 256)">
+      <rect width="222" height="62" rx="8" fill="#121724" stroke="rgba(255, 209, 89, 0.3)" />
+      <text x="14" y="25" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">In-Stadium BLE Geo-Pulse</text>
+      <text x="14" y="44" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Haptics • Flashlights • Jumbotrons</text>
+    </g>
+  </g>
+</svg>
+
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Technical Pipeline</span>
+      <span>LALIGA PULSE Pitch Deck</span>
+      <span>Slide 4 of 6</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 5: FINTECH LOYALTY LOOP -->
+  <div class="slide">
+    <div class="slide-header">
+      <div class="slide-title">4. FinTech Monetization Model (Dubai Summit Bridge)</div>
+      <span class="badge badge-gold">SUSTAINABLE ECONOMICS</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; flex: 1; align-items: center;">
+      <div style="background: #090c12; border-radius: 8pt; padding: 8pt; border: 1px solid #334155;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradFin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b12" />
+      <stop offset="100%" stop-color="#141a29" />
+    </linearGradient>
+
+    <linearGradient id="goldBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd159" />
+      <stop offset="100%" stop-color="#ff9100" />
+    </linearGradient>
+
+    <style>
+      .coin-flow {
+        stroke-dasharray: 6 12;
+        animation: coinRun 2s linear infinite;
+      }
+      @keyframes coinRun {
+        to { stroke-dashoffset: -36; }
+      }
+      .shield-glow {
+        animation: shieldBreath 3s ease-in-out infinite alternate;
+      }
+      @keyframes shieldBreath {
+        0% { filter: drop-shadow(0 0 6px rgba(52, 211, 153, 0.4)); }
+        100% { filter: drop-shadow(0 0 18px rgba(52, 211, 153, 0.8)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="480" rx="16" fill="url(#bgGradFin)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+
+  <!-- Title Header -->
+  <g transform="translate(50, 42)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="800">
+      FINTECH VALUE LOOP &amp; CLOSED-LOOP LOYALTY ECONOMY
+    </text>
+    <text x="0" y="22" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12">
+      Zero-Speculation Loyalty Token Architecture • Dubai FinTech Summit Monetization Model
+    </text>
+  </g>
+
+  <!-- LEFT: SPONSOR & FINTECH INJECTION -->
+  <g transform="translate(50, 100)">
+    <rect width="250" height="330" rx="12" fill="#121724" stroke="rgba(255, 209, 89, 0.3)" stroke-width="1" />
+    <rect x="0" y="0" width="250" height="36" rx="12" fill="rgba(255, 209, 89, 0.12)" />
+    <text x="16" y="23" fill="#ffd159" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+      1. CAPITAL &amp; SPONSOR INJECTION
+    </text>
+
+    <!-- Sponsor Card 1: Decision Windows -->
+    <g transform="translate(14, 50)">
+      <rect width="222" height="65" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="22" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Sponsored Tactical Moments</text>
+      <text x="12" y="40" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">EA SPORTS, Puma, Azure ML</text>
+      <text x="12" y="54" fill="#ffd159" font-family="monospace" font-size="9">Sponsored 15s Decision Windows</text>
+    </g>
+
+    <!-- Sponsor Card 2: Regional FinTech Banking -->
+    <g transform="translate(14, 125)">
+      <rect width="222" height="65" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="22" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">MENA &amp; Global FinTech Partners</text>
+      <text x="12" y="40" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Dubai FinTech, Digital Wallets</text>
+      <text x="12" y="54" fill="#00f0ff" font-family="monospace" font-size="9">Card-linked merchant discounts</text>
+    </g>
+
+    <!-- Sponsor Card 3: First-Party Data -->
+    <g transform="translate(14, 200)">
+      <rect width="222" height="65" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="22" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">B2B Fan Intelligence Capital</text>
+      <text x="12" y="40" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Zero-Party Behavioral Insights</text>
+      <text x="12" y="54" fill="#34d399" font-family="monospace" font-size="9">Commercial rights valuation surge</text>
+    </g>
+
+    <text x="16" y="305" fill="#ffd159" font-family="monospace" font-size="10" font-weight="700">
+      Direct Revenue &amp; Liquidity Pool
+    </text>
+  </g>
+
+  <!-- FLOW BEAMS LEFT TO CENTER -->
+  <g stroke="#ffd159" stroke-width="2" fill="none">
+    <path class="coin-flow" d="M 300 240 L 370 240" />
+  </g>
+
+  <!-- CENTER: THE CLOSED-LOOP PULSE LEDGER -->
+  <g transform="translate(370, 100)">
+    <rect width="220" height="330" rx="12" fill="#161c2b" stroke="rgba(0, 240, 255, 0.4)" stroke-width="1.5" />
+    <rect x="0" y="0" width="220" height="36" rx="12" fill="rgba(0, 240, 255, 0.15)" />
+    <text x="16" y="23" fill="#00f0ff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+      2. $PULSE UTILITY LEDGER
+    </text>
+
+    <!-- Central Token Graphic -->
+    <g transform="translate(110, 115)">
+      <circle cx="0" cy="0" r="48" fill="#1c2438" stroke="#ff4b44" stroke-width="2" />
+      <circle cx="0" cy="0" r="38" fill="rgba(255, 75, 68, 0.15)" />
+      <text x="0" y="-4" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="900" text-anchor="middle">$PULSE</text>
+      <text x="0" y="14" fill="#ffd159" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle">LOYALTY XP</text>
+    </g>
+
+    <!-- Token Mechanics -->
+    <g transform="translate(14, 185)">
+      <rect width="192" height="70" rx="6" fill="#10141f" stroke="rgba(255, 255, 255, 0.06)" />
+      <text x="10" y="20" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">• Sweat-Equity Minting</text>
+      <text x="10" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Earned via tactical accuracy</text>
+      <text x="10" y="52" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">• Zero Speculation</text>
+    </g>
+
+    <!-- Non-Gambling Compliance Badge -->
+    <g transform="translate(14, 270)" class="shield-glow">
+      <rect width="192" height="45" rx="6" fill="rgba(52, 211, 153, 0.15)" stroke="rgba(52, 211, 153, 0.5)" stroke-width="1" />
+      <text x="10" y="20" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="800">100% FREE-TO-PLAY</text>
+      <text x="10" y="34" fill="#a7f3d0" font-family="'Plus Jakarta Sans', sans-serif" font-size="8">DGOJ, UAE SCA &amp; GDPR Cleared</text>
+    </g>
+  </g>
+
+  <!-- FLOW BEAMS CENTER TO RIGHT -->
+  <g stroke="#00f0ff" stroke-width="2" fill="none">
+    <path class="coin-flow" d="M 590 240 L 660 240" />
+  </g>
+
+  <!-- RIGHT: REAL-WORLD FAN REWARD REDEMPTION -->
+  <g transform="translate(660, 100)">
+    <rect width="250" height="330" rx="12" fill="#121724" stroke="rgba(52, 211, 153, 0.3)" stroke-width="1" />
+    <rect x="0" y="0" width="250" height="36" rx="12" fill="rgba(52, 211, 153, 0.12)" />
+    <text x="16" y="23" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">
+      3. FAN VALUE REDEMPTION
+    </text>
+
+    <!-- Reward Item 1 -->
+    <g transform="translate(14, 50)">
+      <rect width="222" height="60" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="20" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Official Club Jerseys &amp; Gear</text>
+      <text x="12" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Direct store fulfillment</text>
+      <text x="12" y="50" fill="#ff4b44" font-family="monospace" font-size="9">4,500 $PULSE</text>
+    </g>
+
+    <!-- Reward Item 2 -->
+    <g transform="translate(14, 120)">
+      <rect width="222" height="60" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="20" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">LALIGA+ All-Access Passes</text>
+      <text x="12" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">1-Month multi-device streaming</text>
+      <text x="12" y="50" fill="#00f0ff" font-family="monospace" font-size="9">1,500 $PULSE</text>
+    </g>
+
+    <!-- Reward Item 3 -->
+    <g transform="translate(14, 190)">
+      <rect width="222" height="60" rx="8" fill="#181f30" stroke="rgba(255, 255, 255, 0.08)" />
+      <text x="12" y="20" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700">Dubai FinTech Summit VIP Pass</text>
+      <text x="12" y="36" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">Innovation stage executive access</text>
+      <text x="12" y="50" fill="#ffd159" font-family="monospace" font-size="9">3,000 $PULSE</text>
+    </g>
+
+    <text x="16" y="290" fill="#34d399" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700">
+      Loop Complete: High Fandom Retention
+    </text>
+    <text x="16" y="308" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="9">
+      D30 Retention: 54% (+145% uplift)
+    </text>
+  </g>
+</svg>
+
+      </div>
+      <div>
+        <h3 style="color: #0f172a; font-size: 13pt; margin-bottom: 8pt;">Closed-Loop Fan Capital Network</h3>
+        <ul style="font-size: 10pt; color: #334155; margin-left: 14pt; line-height: 1.7;">
+          <li><strong>Sweat-Equity Minting:</strong> Fans earn $PULSE credits through match attention and accuracy.</li>
+          <li><strong>Sponsor Capital:</strong> EA SPORTS, Puma, and regional UAE digital banks fund reward pools.</li>
+          <li><strong>Real-World Perks:</strong> Authentic jerseys, LALIGA+ OTT passes, and Dubai FinTech Summit passes.</li>
+          <li><strong>100% Free-to-Play:</strong> Compliant with Spain DGOJ, UAE SCA, and US regulations without gambling licenses.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>FinTech Economics</span>
+      <span>LALIGA PULSE Pitch Deck</span>
+      <span>Slide 5 of 6</span>
+    </div>
+  </div>
+
+  <!-- SLIDE 6: TRACTION & PROTOTYPE -->
+  <div class="slide slide-dark">
+    <div class="slide-header">
+      <div class="slide-title">5. Demo Day Prototype &amp; Enterprise Roadmap</div>
+      <span class="badge badge-green">LIVE &amp; FUNCTIONAL</span>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16pt; flex: 1; align-items: center;">
+      <div>
+        <h3 style="color: #00f0ff; font-size: 14pt; margin-bottom: 8pt;">Built &amp; Working Live for Demo Day:</h3>
+        <ul style="font-size: 10pt; color: #cbd5e1; margin-left: 14pt; line-height: 1.8;">
+          <li>✓ Real-time match clock simulating ElClásico minute 74 free-kick.</li>
+          <li>✓ 15s synchronous voting prompt with sub-3s optical settlement.</li>
+          <li>✓ Global Peña clan war leaderboard (Tokyo, Cairo, Dubai, Bogotá).</li>
+          <li>✓ Beyond Stats 2.0 Momentum Shift Index (MSI™) and 2D spatial pitch map.</li>
+          <li>✓ Functional loyalty wallet with instant perks marketplace redemption.</li>
+        </ul>
+      </div>
+      <div style="text-align: center; background: rgba(255, 255, 255, 0.05); padding: 18pt; border-radius: 10pt; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h2 style="color: #ffd159; font-size: 20pt; margin-bottom: 6pt;">Ready to Scale to 200M Fans</h2>
+        <p style="color: #94a3b8; font-size: 10pt; margin-bottom: 12pt;">
+          Roadmap to integrate across all 20 Primera División clubs by Season 2026/27.
+        </p>
+        <span class="badge badge-red" style="font-size: 10pt; padding: 6pt 14pt;">USD 10,000 PRIZE WINNER BLUEPRINT</span>
+      </div>
+    </div>
+    <div class="slide-footer">
+      <span>Execution Plan</span>
+      <span>LALIGA PULSE Pitch Deck</span>
+      <span>Slide 6 of 6</span>
+    </div>
+  </div>
+
+</body>
+</html>

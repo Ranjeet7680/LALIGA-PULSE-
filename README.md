@@ -23,6 +23,17 @@
 
 ---
 
+## 📄 Official PDF Documents & Submission Downloads
+
+| Document | Format & Size | Description & Target Audience | Direct Download Link |
+| :--- | :--- | :--- | :--- |
+| **LALIGA PULSE™ Master Project Proposal** | PDF (793 KB) | Complete competition submission covering Concept Summary, Ecosystem Integration, Telemetry Ingestion, KPIs, and Legal Safeguards. | [Download Proposal PDF](docs/pdf/LALIGA_PULSE_Master_Project_Proposal.pdf) |
+| **LALIGA PULSE™ Executive Pitch Deck** | PDF (680 KB) | Landscape presentation slide deck tailored for Demo Day judges, sovereign investors, and Dubai FinTech Summit executives. | [Download Pitch Deck PDF](docs/pdf/LALIGA_PULSE_Executive_Pitch_Deck.pdf) |
+| **LALIGA PULSE™ Technical Architecture Spec** | PDF (433 KB) | Engineering deep-dive detailing TRACAB 25fps optical coordinate schemas, Kafka streaming topics, and latency sync budgets. | [Download Technical Spec PDF](docs/pdf/LALIGA_PULSE_Technical_Architecture_Spec.pdf) |
+
+
+---
+
 ## ⚡ Executive Summary
 
 Football’s traditional 90-minute passive TV consumption model is facing a structural generational transition. Today, **84% of Gen-Z and digital-native fans multi-screen during live matches**, splitting attention across messaging, social apps, and stats feeds. This attention is fragmented, unmonetized, and leaks commercial value outside the official football ecosystem. Furthermore, **over 85% of LALIGA’s 200M+ international fans will never visit a Spanish stadium in person**.
