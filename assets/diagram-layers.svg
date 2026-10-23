@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradLayers" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c12" />
+      <stop offset="100%" stop-color="#111622" />
+    </linearGradient>
+
+    <style>
+      .card-float {
+        transition: transform 0.3s ease;
+      }
+      .card-pulse-1 {
+        animation: cardGlow1 3s ease-in-out infinite alternate;
+      }
+      .card-pulse-2 {
+        animation: cardGlow2 3.2s ease-in-out infinite alternate;
+      }
+      .card-pulse-3 {
+        animation: cardGlow3 3.4s ease-in-out infinite alternate;
+      }
+      .card-pulse-4 {
+        animation: cardGlow4 3.6s ease-in-out infinite alternate;
+      }
+      @keyframes cardGlow1 {
+        0% { stroke: rgba(255, 75, 68, 0.3); }
+        100% { stroke: rgba(255, 75, 68, 0.9); filter: drop-shadow(0 0 10px rgba(255, 75, 68, 0.4)); }
+      }
+      @keyframes cardGlow2 {
+        0% { stroke: rgba(0, 240, 255, 0.3); }
+        100% { stroke: rgba(0, 240, 255, 0.9); filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.4)); }
+      }
+      @keyframes cardGlow3 {
+        0% { stroke: rgba(255, 209, 89, 0.3); }
+        100% { stroke: rgba(255, 209, 89, 0.9); filter: drop-shadow(0 0 10px rgba(255, 209, 89, 0.4)); }
+      }
+      @keyframes cardGlow4 {
+        0% { stroke: rgba(52, 211, 153, 0.3); }
+        100% { stroke: rgba(52, 211, 153, 0.9); filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.4)); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="960" height="480" rx="16" fill="url(#bgGradLayers)" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5" />
+
+  <!-- Title Header -->
+  <g transform="translate(50, 42)">
+    <text x="0" y="0" fill="#ffffff" font-family="'Space Grotesk', system-ui, sans-serif" font-size="20" font-weight="800">
+      THE 4 STRATEGIC OPPORTUNITY LAYERS
+    </text>
+    <text x="0" y="22" fill="#94a3b8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12">
+      Direct Mapping of LALIGA PULSE Features to Competition Opportunity Areas
+    </text>
+  </g>
+
+  <!-- 4 CARDS GRID (2x2) -->
+
+  <!-- CARD 1: IN-MATCH PARTICIPATION -->
+  <g transform="translate(50, 90)">
+    <rect width="415" height="160" rx="14" fill="#141926" stroke-width="1.5" class="card-pulse-1" />
+    <rect x="0" y="0" width="415" height="34" rx="14" fill="rgba(255, 75, 68, 0.15)" />
+    
+    <circle cx="22" cy="17" r="5" fill="#ff4b44" />
+    <text x="36" y="21" fill="#ff736d" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">
+      OPPORTUNITY AREA 1: IN-MATCH PARTICIPATION
+    </text>
+
+    <text x="20" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800">
+      Synchronous Micro-Tactix (15s Decision Windows)
+    </text>
+
+    <text x="20" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" width="375">
+      • Real-time triggers linked to critical set-pieces, counter-attacks, &amp; VAR.
+    </text>
+    <text x="20" y="105" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Sub-3s automated settlement verified via Mediacoach 25fps optical tracking.
+    </text>
+    <text x="20" y="125" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Rapid dopamine loops without financial wagering or betting friction.
+    </text>
+    <text x="20" y="145" fill="#00f0ff" font-family="monospace" font-size="10" font-weight="700">
+      KPI Impact: +277% Concurrent Matchday Screen Time (68 min avg)
+    </text>
+  </g>
+
+  <!-- CARD 2: STRUCTURED COMMUNITY -->
+  <g transform="translate(495, 90)">
+    <rect width="415" height="160" rx="14" fill="#141926" stroke-width="1.5" class="card-pulse-2" />
+    <rect x="0" y="0" width="415" height="34" rx="14" fill="rgba(0, 240, 255, 0.15)" />
+
+    <circle cx="22" cy="17" r="5" fill="#00f0ff" />
+    <text x="36" y="21" fill="#70f8ff" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">
+      OPPORTUNITY AREA 2: STRUCTURED COMMUNITY
+    </text>
+
+    <text x="20" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800">
+      Global Peña Clan Wars &amp; Proof-of-Fandom
+    </text>
+
+    <text x="20" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • 2,500+ official supporter clubs (Peña Tokyo, Cairo, Dubai, Bogotá) battle live.
+    </text>
+    <text x="20" y="105" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Collective squad scores pooled into real-time global standings.
+    </text>
+    <text x="20" y="125" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Tiered status badges: Novato → Aficionado → Capitán → Leyenda de Club.
+    </text>
+    <text x="20" y="145" fill="#00f0ff" font-family="monospace" font-size="10" font-weight="700">
+      KPI Impact: 1.6 Viral K-Factor via Peña Clan Invitations
+    </text>
+  </g>
+
+  <!-- CARD 3: DATA & NARRATIVE AMPLIFICATION -->
+  <g transform="translate(50, 275)">
+    <rect width="415" height="160" rx="14" fill="#141926" stroke-width="1.5" class="card-pulse-3" />
+    <rect x="0" y="0" width="415" height="34" rx="14" fill="rgba(255, 209, 89, 0.15)" />
+
+    <circle cx="22" cy="17" r="5" fill="#ffd159" />
+    <text x="36" y="21" fill="#ffd159" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">
+      OPPORTUNITY AREA 3: DATA &amp; NARRATIVE AMPLIFICATION
+    </text>
+
+    <text x="20" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800">
+      Beyond Stats 2.0 &amp; Proprietary Fan Telemetry
+    </text>
+
+    <text x="20" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Momentum Shift Index (MSI™): Calculates surge vs. defensive distress.
+    </text>
+    <text x="20" y="105" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Pressure Cooker Rating &amp; Crowd Tactical IQ (CTIQ™) debate engine.
+    </text>
+    <text x="20" y="125" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • AI narrative generation translating spatial tracking into broadcast talking points.
+    </text>
+    <text x="20" y="145" fill="#00f0ff" font-family="monospace" font-size="10" font-weight="700">
+      KPI Impact: +145% D30 Cohort Retention Uplift
+    </text>
+  </g>
+
+  <!-- CARD 4: EXTENDED EXPERIENCE & FINTECH -->
+  <g transform="translate(495, 275)">
+    <rect width="415" height="160" rx="14" fill="#141926" stroke-width="1.5" class="card-pulse-4" />
+    <rect x="0" y="0" width="415" height="34" rx="14" fill="rgba(52, 211, 153, 0.15)" />
+
+    <circle cx="22" cy="17" r="5" fill="#34d399" />
+    <text x="36" y="21" fill="#6ee7b7" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700">
+      OPPORTUNITY AREA 4: EXTENDED EXPERIENCE &amp; FINTECH
+    </text>
+
+    <text x="20" y="60" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="800">
+      Pulse Loyalty Wallet &amp; Hybrid Stadium Sync
+    </text>
+
+    <text x="20" y="85" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • Mid-week tactical drills &amp; interactive highlights keep engagement 24/7.
+    </text>
+    <text x="20" y="105" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • In-stadium BLE geo-fencing: synchronized phone lightshows &amp; jumbotron votes.
+    </text>
+    <text x="20" y="125" fill="#94a3b8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">
+      • $PULSE Credits redeemable for authentic kits, LALIGA+ passes, &amp; partner perks.
+    </text>
+    <text x="20" y="145" fill="#00f0ff" font-family="monospace" font-size="10" font-weight="700">
+      KPI Impact: 3x DAU/MAU Growth Ratio (Target: 36%)
+    </text>
+  </g>
+</svg>
